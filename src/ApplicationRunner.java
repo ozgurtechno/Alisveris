@@ -1,6 +1,8 @@
 import database.Database;
 import entity.*;
 import enums.City;
+import enums.Color;
+
 import java.util.Scanner;
 
 public class ApplicationRunner {
@@ -22,7 +24,7 @@ public class ApplicationRunner {
         database.addUser(musteri1);
 
         // Bu urunler magazada satilan ve database de kayitli urunlerdir...
-        Item item1 = new Item("Macbook",Color.BLACK,1500);
+        Item item1 = new Item("Macbook", Color.BLACK,1500);
         Item item2 = new Item("IPhone",Color.GREEN,1200);
         Item item3 = new Item("Samsung",Color.RED,800);
         Item item4 = new Item("Mouse",Color.BLACK,100);

@@ -1,5 +1,7 @@
 package entity;
 
+import enums.Color;
+
 public class Item {
     private String name;
     private Color color;
