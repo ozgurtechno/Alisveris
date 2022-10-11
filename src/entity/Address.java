@@ -4,9 +4,15 @@ import enums.City;
 
 public class Address {
 
+    //----------------------Fields---------------------------------------------------------------------
+    // 3 adet private instance degisken tanimlayin... String description - City city - String zipCode
+    // City ayri bir sinif olarak tanimlandigindan buradaki odevlerinizi yapiniz...
     private String description;
     private City city;
     private String zipCode;
+
+    //----------------------Constructor ---------------------------------------------------------------------
+    // Tum degiskenler constructor ile initilize edilmelidir...
 
     public Address(String description, City city, String zipCode) {
         this.description = description;
@@ -14,6 +20,7 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    //----------------------Getter and Setter ---------------------------------------------------------------------
     public String getDescription() {
         return description;
     }

@@ -2,12 +2,19 @@ package entity;
 
 public class User {
 
+    //----------------------Fields ---------------------------------------------------------------------
+
+    // 5 adet private degisken tanimlayin... String cinsinden firstName, lastName, userName, password.. Address cinsinden address
+    // Address sinifi ayri bir sinif olarak tanimlanmistir... Address sinifindaki odevlerinizi yapiniz..
     private String firstName;
     private String lastName;
     private String userName;
     private String password;
     private Address address;
 
+    //----------------------Constructor ---------------------------------------------------------------------
+
+    // Tum degiskenleri constructor ile initilize ediniz...
     public User(String firstName, String lastName, String userName, String password, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,12 +23,7 @@ public class User {
         this.address = address;
     }
 
-    public User(String userName, String password, Address adress) {
-        this.userName = userName;
-        this.password = password;
-        this.address = adress;
-    }
-
+    //----------------------Getter and Setter ---------------------------------------------------------------------
     public String getFirstName() {
         return firstName;
     }
