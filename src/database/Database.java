@@ -9,6 +9,8 @@ import java.util.List;
 
 public class Database {
 
+    // Bu sinifta herhangi bir odeviniz bulunmamaktadir... Bir sonraki hafta burayla ilgili calisma yapacagiz...
+
     public static List<User> users = new ArrayList<>();
     public static List<Item> items = new ArrayList<Item>();
 
