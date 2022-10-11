@@ -2,6 +2,7 @@ package database;
 
 import entity.Item;
 import entity.User;
+import exception.ItemNotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,21 @@ public class Database {
 
     public void addItem(Item item){
         items.add(item);
+    }
+
+    public Item findItemById(int id) throws ItemNotFoundException {
+        for (Item item : items){
+            if (item.getId() == id){
+                return item;
+            }
+        }
+        throw new ItemNotFoundException("Boyle bir urun stoklarimizda mevcut degildir");
+    }
+
+
+
+    public List<Item> getAllItems(){
+        return items;
     }
 
 
