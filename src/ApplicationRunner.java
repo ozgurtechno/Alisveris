@@ -97,7 +97,7 @@ public class ApplicationRunner {
                 final int userChoice = scan.nextInt();
 
                 switch (userChoice) {
-                    case 1 -> {
+                    case 1 : {
                         System.out.println("Odemeniz alinmistir...Bizi tercih ettiginiz icin tesekkur ederiz");
                         System.out.println("Urununuz '" + currentUser.getAddress().getDescription() + "' adresine kargolanacaktir.");
                         shoppingCart.emptyCart();
@@ -105,11 +105,11 @@ public class ApplicationRunner {
                         continueShopping = false;
                         break;
                     }
-                    case 2 -> {
+                    case 2 : {
                         isInputValid = false;
                         break;
                     }
-                    default -> System.out.println("Gecerli bir secim yapmadiniz...");
+                    default : System.out.println("Gecerli bir secim yapmadiniz...");
                 }
             }
         }
