@@ -12,7 +12,7 @@ public interface UserService {
 
     List<User> getAllUser();
 
-    User geUserById(int id) throws UserNotFoundException;
+    User getUserById(int id) throws UserNotFoundException;
 
     User addUser();
 

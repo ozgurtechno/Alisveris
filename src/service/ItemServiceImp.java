@@ -6,7 +6,7 @@ import exception.ItemNotFoundException;
 
 import java.util.List;
 
-public class ItemServiceImplementation implements ItemService{
+public class ItemServiceImp implements ItemService{
 
     @Override
     public List<Item> getAllItems() {

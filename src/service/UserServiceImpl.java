@@ -8,7 +8,7 @@ import exception.UserNotFoundException;
 
 import java.util.List;
 
-public class UserServiceImplementation extends AbstractService implements UserService{
+public class UserServiceImpl extends AbstractService implements UserService{
 
     int randomId = (int) (Math.random() * 100);
 
@@ -18,7 +18,7 @@ public class UserServiceImplementation extends AbstractService implements UserSe
     }
 
     @Override
-    public User geUserById(int id) throws UserNotFoundException {
+    public User getUserById(int id) throws UserNotFoundException {
         for (User user : Database.users){
             if (user.getId() == id){
                 return user;

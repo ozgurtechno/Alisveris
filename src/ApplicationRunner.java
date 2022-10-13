@@ -6,8 +6,8 @@ import service.*;
 public class ApplicationRunner {
     public static void main(String[] args) throws ItemNotFoundException {
 
-        UserService userService = new UserServiceImplementation();
-        ShoppingService shoppingService = new ShoppingService();
+        UserService userService = new UserServiceImpl();
+        ShoppingServiceImpl shoppingService = new ShoppingServiceImpl();
         Cart shoppingCart = new Cart();
 
 
