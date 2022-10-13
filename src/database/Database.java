@@ -2,40 +2,33 @@ package database;
 
 import entity.Item;
 import entity.User;
-import exception.ItemNotFoundException;
-
+import enums.Color;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
 
-    // Bu sinifta herhangi bir odeviniz bulunmamaktadir... Bir sonraki hafta burayla ilgili calisma yapacagiz...
-
     public static List<User> users = new ArrayList<>();
     public static List<Item> items = new ArrayList<Item>();
 
-    public void addUser(User user){
-        users.add(user);
-    }
+    static {
 
-    public void addItem(Item item){
-        items.add(item);
-    }
+        Item item1 = new Item(1,"Macbook", Color.BLACK,1500);
+        Item item2 = new Item(2,"IPhone",Color.GREEN,1200);
+        Item item3 = new Item(3,"Samsung",Color.RED,800);
+        Item item4 = new Item(4,"Mouse",Color.BLACK,100);
+        items.add(item1);
+        items.add(item2);
+        items.add(item3);
+        items.add(item4);
 
-    public Item findItemById(int id) throws ItemNotFoundException {
-        for (Item item : items){
-            if (item.getId() == id){
-                return item;
-            }
-        }
-        throw new ItemNotFoundException("Boyle bir urun stoklarimizda mevcut degildir");
     }
 
 
 
-    public List<Item> getAllItems(){
-        return items;
-    }
+
+
+
 
 
 }

@@ -1,6 +1,6 @@
 package entity;
 
-public class CartItem {
+public class CartItem{
 
     //----------------------Fields ---------------------------------------------------------------------
 

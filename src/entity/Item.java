@@ -2,13 +2,9 @@ package entity;
 
 import enums.Color;
 
-public class Item {
+public class Item extends BaseEntity{
 
     //----------------------Fields ---------------------------------------------------------------------
-
-    // 4 adet private field tanimlayin - int cinsinden id, String cinsinden name, Color cinsinden color, double cinsinden price
-    // Color sinifi bir ENUM olarak tanimlandigindan ilgili sinifdaki odevlerinizi kontrol edin...
-    private int id;
     private String name;
     private Color color;
     private double price;
@@ -17,20 +13,13 @@ public class Item {
 
     // Tum degiskenleri constructorda initilize edin...
     public Item(int id, String name, Color color, double price) {
-        this.id = id;
+        super(id);
         this.name = name;
         this.color = color;
         this.price = price;
     }
 
     //----------------------Getter and Setter ---------------------------------------------------------------------
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;

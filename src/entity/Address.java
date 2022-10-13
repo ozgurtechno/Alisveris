@@ -2,7 +2,7 @@ package entity;
 
 import enums.City;
 
-public class Address {
+public class Address{
 
     //----------------------Fields---------------------------------------------------------------------
     // 3 adet private instance degisken tanimlayin... String description - City city - String zipCode

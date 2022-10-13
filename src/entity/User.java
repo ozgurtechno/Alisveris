@@ -1,11 +1,8 @@
 package entity;
 
-public class User {
+public class User extends BaseEntity{
 
     //----------------------Fields ---------------------------------------------------------------------
-
-    // 5 adet private degisken tanimlayin... String cinsinden firstName, lastName, userName, password.. Address cinsinden address
-    // Address sinifi ayri bir sinif olarak tanimlanmistir... Address sinifindaki odevlerinizi yapiniz..
     private String firstName;
     private String lastName;
     private String userName;
@@ -14,8 +11,8 @@ public class User {
 
     //----------------------Constructor ---------------------------------------------------------------------
 
-    // Tum degiskenleri constructor ile initilize ediniz...
-    public User(String firstName, String lastName, String userName, String password, Address address) {
+    public User(int id,String firstName, String lastName, String userName, String password, Address address) {
+        super(id);
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
@@ -24,6 +21,9 @@ public class User {
     }
 
     //----------------------Getter and Setter ---------------------------------------------------------------------
+
+
+
     public String getFirstName() {
         return firstName;
     }
