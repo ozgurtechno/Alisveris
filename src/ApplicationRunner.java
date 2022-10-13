@@ -13,9 +13,10 @@ public class ApplicationRunner {
 
         System.out.println("Alisveris yapabilmek icin kayit olusturmaniz gereklidir...");
         User currentUser = userService.addUser();
-
         System.out.println("Kayit oldugunuz icin tesekkur ederiz... Iyi alisverisler..");
+
         shoppingService.completePurchase(currentUser, shoppingCart);
+        System.out.println("Iyi gunler dileriz...");
 
 
     }
