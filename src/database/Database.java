@@ -26,6 +26,8 @@ public class Database {
 
     }
 
+    //TODO BU CLASS dan BAZI KODLAR EKSILMISTIR... BAKINIZ GECEN HAFTAKI KODA..ONLARI SERVICE de yeniden tanimlamalisiniz...
+
 
 
 
