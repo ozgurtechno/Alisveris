@@ -2,6 +2,8 @@ package entity;
 
 public class User extends BaseEntity{
 
+    // TODO Bu class a dokunmayiniz
+
     //----------------------Fields ---------------------------------------------------------------------
     private String firstName;
     private String lastName;
@@ -9,6 +11,7 @@ public class User extends BaseEntity{
     private String password;
     private Address address;
 
+    // TODO Bu class a dokunmayiniz
     //----------------------Constructor ---------------------------------------------------------------------
 
     public User(int id,String firstName, String lastName, String userName, String password, Address address) {
@@ -19,6 +22,7 @@ public class User extends BaseEntity{
         this.password = password;
         this.address = address;
     }
+    // TODO Bu class a dokunmayiniz
 
     //----------------------Getter and Setter ---------------------------------------------------------------------
 

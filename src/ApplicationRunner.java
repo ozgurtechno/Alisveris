@@ -4,6 +4,8 @@ import exception.ItemNotFoundException;
 import service.*;
 
 public class ApplicationRunner {
+
+    // TODO Bu class a dokunmayiniz
     public static void main(String[] args) throws ItemNotFoundException {
 
         UserService userService = new UserServiceImpl();

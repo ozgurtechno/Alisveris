@@ -4,11 +4,14 @@ import enums.Color;
 
 public class Item extends BaseEntity{
 
+    // TODO Bu class a dokunmayiniz
+
     //----------------------Fields ---------------------------------------------------------------------
     private String name;
     private Color color;
     private double price;
 
+    // TODO Bu class a dokunmayiniz
     //---------------------- Constructor ---------------------------------------------------------------------
 
     // Tum degiskenleri constructorda initilize edin...
@@ -19,6 +22,7 @@ public class Item extends BaseEntity{
         this.price = price;
     }
 
+    // TODO Bu class a dokunmayiniz
     //----------------------Getter and Setter ---------------------------------------------------------------------
 
     public String getName() {

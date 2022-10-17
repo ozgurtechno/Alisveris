@@ -3,7 +3,7 @@ package entity;
 public abstract class BaseEntity {
 
     // TODO Bu class yeni eklenmis olup, her item ve user a id saglanabilmesi maksadiyla kullanilmaktadir...
-    // TODO OOP Inheritance
+    // TODO Bu class a dokunmayiniz
     int id;
 
     public BaseEntity(int id) {
