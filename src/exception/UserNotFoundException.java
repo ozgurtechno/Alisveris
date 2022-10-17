@@ -1,8 +1,6 @@
 package exception;
 
-public class UserNotFoundException extends Exception{
+public class UserNotFoundException{
 
-    public UserNotFoundException(String message) {
-        super(message);
-    }
+    // User bulunamadiginda "Boyle bir kullanici mevcut degildir" ikazi veren bir Exception tanimlayin...
 }

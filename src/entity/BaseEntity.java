@@ -1,6 +1,9 @@
 package entity;
 
 public abstract class BaseEntity {
+
+    // TODO Bu class yeni eklenmis olup, her item ve user a id saglanabilmesi maksadiyla kullanilmaktadir...
+    // TODO OOP Inheritance
     int id;
 
     public BaseEntity(int id) {
@@ -14,4 +17,6 @@ public abstract class BaseEntity {
     public void setId(int id) {
         this.id = id;
     }
+
+    // TODO Bu class a dokunmayiniz...
 }

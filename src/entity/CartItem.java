@@ -3,14 +3,10 @@ package entity;
 public class CartItem{
 
     //----------------------Fields ---------------------------------------------------------------------
-
-    // 2 adet private field tanimlayin, Item cinsinden bir item ve int cinsinden bir quantity...
-    // Item ayri bir sinif olarak tanimlanmalidir.. Ilgili siniftaki odevlerinizi tamamlayin...
     private Item item;
     private int quantity;
 
     //----------------------Constructor ---------------------------------------------------------------------
-    // Constructorda tum degiskenlerinizi initilize edin...
     public CartItem(Item item, int quantity) {
         this.item = item;
         this.quantity = quantity;

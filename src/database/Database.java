@@ -11,6 +11,8 @@ public class Database {
     public static List<User> users = new ArrayList<>();
     public static List<Item> items = new ArrayList<Item>();
 
+    //TODO BU CLASS DEGISTIRILMEYECEKTIR...
+
     static {
 
         Item item1 = new Item(1,"Macbook", Color.BLACK,1500);

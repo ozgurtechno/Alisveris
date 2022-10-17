@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface ItemService {
 
+    // TODO Bu class a dokunmayiniz....OOP Abstraction
     List<Item> getAllItems();
 
     Item getItemById(int id) throws ItemNotFoundException;
@@ -16,4 +17,6 @@ public interface ItemService {
     void deleteItemById(int id) throws ItemNotFoundException;
 
     void updateItem(Item item);
+
+    // TODO Bu class a dokunmayiniz....OOP Abstraction
 }

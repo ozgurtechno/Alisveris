@@ -8,46 +8,39 @@ import java.util.List;
 
 public class ItemServiceImp implements ItemService{
 
-    @Override
-    public List<Item> getAllItems() {
-        return Database.items;
-    }
+    // ItemService icerisinde tanilanmis govdesiz tum methodlarin implementation unu bu class da yapacaksiniz...
 
-    @Override
-    public Item getItemById(int id) throws ItemNotFoundException {
-        for (Item item : Database.items){
-            if (item.getId() == id){
-                return item;
-            }
-        }
-        throw new ItemNotFoundException("Boyle bir urun stoklarimizda mevcut degildir");
-    }
+    // GetAllItems methodu Database e gidip oradan butun item lari alir ve bir List olarak return eder...
 
-    @Override
-    public void addItem(Item item) {
-        Database.items.add(item);
-    }
 
-    @Override
-    public void deleteItemById(int id) throws ItemNotFoundException {
-        for (Item item : Database.items){
-            if (item.getId() == id){
-                Database.items.remove(item);
-            }
-        }
-        throw new ItemNotFoundException("Boyle bir urun stoklarimizda mevcut degildir");
-    }
 
-    @Override
-    public void updateItem(Item item) {
-        int itemIndex = 0;
-        for (Item it : Database.items){
-            if (it.getId() == item.getId()){
-                Database.items.remove(item);
-                break;
-            }
-            itemIndex++;
-        }
-        Database.items.add(itemIndex, item);
-    }
+
+
+
+    // getItemById methodu parametre olarak aldigi id ile Database de boyle bir item var mi diye kontrol eder,
+    // yoksa, ItemNotFound exception firlatir, varsa ilgili item i return eder...
+
+
+
+
+
+
+
+    // addItem methodu, parametre olarak aldigi item i Database deki items listesine ekler...
+
+
+
+
+
+    // deleteItemById methodu parametre olarak aldigi id ile Database de o urunu arar, bulamazsa ItemnotFound exception firlatir
+    // ilgili item mevcut ise onu Database list inden siler...
+
+
+
+
+
+
+    // updateItem methodu parametre olarak aldigi Item i Database de arar, yoksa ItemNotFound exception firlatir,
+    // Varsa Datalase deki items listesinden silip, guncel halini Database List ine ekler...
+
 }
